@@ -1,0 +1,106 @@
+.features_small {
+    $self: &;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $background-feature-small;
+    min-height: 976px;
+
+    #{$self}__cards {
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+        width: 604px;
+
+        .card {
+            border-radius: 5px;
+            background-color: $background-card-feature-small;
+            width: 286px;
+            height: 330px;
+            padding: 31px 0 0 31px;
+
+            img {
+                width: 80px;
+                height: 80px;
+            }
+            h1 {
+                font-size: 26px;
+            }
+            p {
+                font-size: 18px;
+                hyphens: manual;
+            }
+        }
+    }
+    #{$self}__infoText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 489px;
+
+        h1 {
+            margin: 0 0 33px 0;
+        }
+        p {
+            width: 390px;
+            margin: 0 0 33px 0;
+        }
+    }
+}
+
+@media screen and (min-width: 474px) and (max-width: 768px) {
+    .features_small {
+        $self: &;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        #{$self}__cards {
+            width: 100%;
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+            .card {
+                margin: 0 auto;
+            }
+        }
+
+        #{$self}__infoText {
+            h1 {
+                width: 100%;
+                margin: 15px 0 0 0;
+                font-size: 35px;
+            }
+            p{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 474px) {
+    .features_small {
+        $self: &;
+        flex-direction: column;
+        justify-content: center;
+
+
+        #{$self}__cards {
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+            .card {
+                margin: 0 auto;
+            }
+        }
+
+        #{$self}__infoText {
+            width: 200px;
+            h1 {
+                margin: 15px 0 0 0;
+                font-size: 25px;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+// variables
+@import 'Colors/variables';
+
+// reset
+@import 'reset';
+@import 'app';
+
+// helpers
+@import 'helpers/defaultStyleButton';
+@import 'helpers/defaultStyleText';
+@import 'helpers/footerTransfers';
+
+// models
+@import 'models/PageIndex/header';
+@import 'models/PageIndex/hero';
+@import 'models/PageIndex/messnger';
+@import 'models/PageIndex/partners';
+@import 'models/PageIndex/featuresSmall';
+@import 'models/PageIndex/featuresWithVideo';
+@import 'models/PageIndex/featuresWithPhoto';
+@import 'models/PageIndex/testmonials';
+@import 'models/PageIndex/footer';
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap" rel="stylesheet');

@@ -1,0 +1,23 @@
+.partners {
+    $self: &;
+    margin: 67px 0 0 0;
+
+    #{$self}__icons {
+        margin: 35px 0 0 0;
+
+        .icon img {
+            max-width: 100%;
+        }
+    }
+    #{$self}__main-text {
+        text-align: center;
+        font-size: 24px;
+    }
+    #{$self}__icons {
+        display: flex;
+        justify-content: center;
+    }
+    #{$self}__icons .icon:not(:last-child) {
+        margin: 0 60px 0 0;
+    }
+}

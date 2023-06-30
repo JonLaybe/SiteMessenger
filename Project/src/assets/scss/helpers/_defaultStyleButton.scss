@@ -1,0 +1,21 @@
+@mixin styleButton {
+    background-color: $background-blue-btn;
+    color: $text-blue-btn;
+    font-size: 20px;
+    width: 179px;
+    height: 57px;
+    border: 0;
+    border-radius: 5px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.defaultStyleBlueButton {
+    @include styleButton();
+}
+
+.defaultStyleGrayButton {
+    @include styleButton();
+}

@@ -1,0 +1,15 @@
+.footer-wrapper-transfers {
+    $self: &;
+
+    h1 {
+        font-size: 24px;
+        margin: 0 0 27.43px 0;
+    }
+    ul {
+        list-style-type: none;
+
+        li:not(:last-child) {
+            margin: 0 0 19px 0;
+        }
+    }
+}
